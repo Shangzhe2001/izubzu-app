@@ -1,0 +1,14 @@
+cd "C:/Users/92503/Desktop/AY2021-22 S2/IT2002/Projects/The App/The app project/Feature Achievement/House_info_filter"
+$env:FLASK_APP = "House_info_filter"
+flask run
+
+########
+Test api
+########
+
+http://127.0.0.1:5000/expected_price/asc?Area=Boat Quay&Negotiable=YES&Available_date=2022-7-10&Bedroom_no=1
+http://127.0.0.1:5000/expected_price/desc?Area=Boat%20Quay&Negotiable=YES&Available_date=2022-7-10&Bedroom_no=1
+http://127.0.0.1:5000/price_per_feet/asc?Area=Boat%20Quay&Negotiable=YES&Available_date=2022-7-10&Bedroom_no=1
+http://127.0.0.1:5000/price_per_feet/desc?Area=Boat%20Quay&Negotiable=YES&Available_date=2022-7-10&Bedroom_no=1
+http://127.0.0.1:5000/room_size/asc?Area=Boat%20Quay&Negotiable=YES&Available_date=2022-7-10&Bedroom_no=1
+http://127.0.0.1:5000/room_size/desc?Area=Boat%20Quay&Negotiable=YES&Available_date=2022-7-10&Bedroom_no=1
